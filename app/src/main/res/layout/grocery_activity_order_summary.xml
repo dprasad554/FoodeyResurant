@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/grocery_toolbar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_aos_pname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Order Placed Successfully"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_18" />
+
+                    <TextView
+                        android:id="@+id/vT_aos_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="Waiting for restaurant to confirm"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/expo_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/vT_aos_booking_rec"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Booking Recived"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/vT_aos_confirm_book"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Confirm Booking"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/vT_aos_confirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Confirmed"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <com.kofigyan.stateprogressbar.StateProgressBar
+                android:id="@+id/vS_aos_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:spb_animateToCurrentProgressState="true"
+                app:spb_checkStateCompleted="false"
+                app:spb_currentStateDescriptionColor="@color/colorPrimary"
+                app:spb_currentStateNumber="one"
+                app:spb_descriptionTopSpaceIncrementer="10dp"
+                app:spb_enableAllStatesCompleted="false"
+                app:spb_maxStateNumber="three"
+                app:spb_stateBackgroundColor="#BDBDBD"
+                app:spb_stateDescriptionColor="#808080"
+                app:spb_stateDescriptionSize="8sp"
+                app:spb_stateForegroundColor="@color/colorPrimary"
+                app:spb_stateLineThickness="2dp"
+                app:spb_stateNumberBackgroundColor="#808080"
+                app:spb_stateNumberForegroundColor="#eeeeee"
+                app:spb_stateSize="40dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/circle_white_two_corner_bend"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/vT_aos_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_l"
+                    android:layout_marginTop="@dimen/layout_margin5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vT_order"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Order Id"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/vT_order_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="FS12345"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/vT_aos_grand_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Grand total"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/vT_aos_grand_totalval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹245.00"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/vT_payment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Payment Method"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/vT_payment_method"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="COD"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/vT_payment_stat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:text="Payment Status"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/vT_payment_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="Pending"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/circle_while_corner_bend"
+                    android:layout_marginTop="@dimen/layout_margin10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_margin10"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/deliveryHead"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.7"
+                            android:text="Delivery Address"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_16"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_l"
+                        android:layout_marginTop="@dimen/layout_margin5"/>
+
+                    <TextView
+                        android:id="@+id/addressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@color/text_color_light"
+                        android:layout_marginTop="@dimen/layout_margin10"
+                        android:textSize="@dimen/text_15"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:background="@drawable/gradient_blue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:onClick="closeSummary"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

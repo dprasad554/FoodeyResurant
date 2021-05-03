@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/vR_adeot_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/vC_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/vT_adeot_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:text="Coackroach Control"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="3sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/text_14" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/vT_add_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="4sp"
+                                android:text="₹ 700"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                android:id="@+id/vL_continue"
+                                android:layout_width="100sp"
+                                android:layout_height="30sp"
+                                android:layout_marginTop="10sp"
+                                android:text="Book Now"
+                                android:gravity="center"
+                                android:background="@drawable/circle_black_corner_bend"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/vC_adeot_card"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:id="@+id/vI_adeot_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY" />
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
+

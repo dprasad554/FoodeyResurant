@@ -1,0 +1,366 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/vC_ado_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/vL_admd_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/food_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:src="@drawable/bg_1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_restaurant_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:lineSpacingExtra="2dp"
+                        android:text="Rayalseema"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:gravity="center"
+                        android:layout_gravity = "center">
+
+
+                        <TextView
+                            android:id="@+id/vT_address_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:lines="2"
+                            android:text="BTM"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/text_10" />
+
+                        <TextView
+                            android:id="@+id/vT_qr_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="right"
+                            android:lines="2"
+                            android:text="Scan QR Code"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/text_14" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/expo_bg" />
+
+            <LinearLayout
+                android:id="@+id/vL_cl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:paddingTop="5sp"
+                        android:text="ITEMS"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/vT_item_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:text="Biriyani"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:paddingTop="5sp"
+                        android:text="ORDERED ON"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/vT_ado_orderonval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:text="28 July 2018 at 3:45PM"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:paddingTop="5sp"
+                        android:text="TOTAL AMOUNT"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/vT_ado_priceval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10sp"
+                        android:text="289.00"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/expo_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vT_ado_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="3dp"
+                            android:singleLine="true"
+                            android:text="Pending"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_14" />
+
+                        <TextView
+                            android:id="@+id/vT_rate_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="3dp"
+                            android:singleLine="true"
+                            android:text="Rate Delivery"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_14"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/vT_add_tips"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="3dp"
+                            android:singleLine="true"
+                            android:text="Add Tips"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_14"
+                            android:visibility="visible" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vL_ado_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/vT_ado_orderon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/ordered_on"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true"
+                    android:text="28 July 2018 at 3:45PM"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vT_ado_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="@string/total_amount"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="289.00"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vT_ado_order_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:singleLine="true"
+                        android:text="@string/order_id"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/vT_ado_orderid_val"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="FA25136"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vT_ado_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="@string/items"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.geekhive.foodey">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    -->
+    <!--
+<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    -->
+    <!-- <uses-permission android:name="android.permission.STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--
+<uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    -->
+    <!-- <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" /> -->
+    <!-- <uses-permission android:name="android.permission.USE_CREDENTIALS" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Food.qrcode.QrScanActivity"></activity>
+        <activity android:name=".Food.tracking.TrackingActivity" />
+        <activity android:name=".Food.more.WebViewActivity" />
+        <activity android:name=".Food.orderfood.CheckOutActivityNew" />
+        <activity android:name=".Food.tablebooking.TableBookingActivity" />
+        <activity android:name=".Food.eatout.MenuListActivity" />
+        <activity android:name=".Food.profile.EditProfile" />
+        <activity android:name=".Food.landing.LandingActivity" />
+        <activity
+            android:name=".Food.Coupon.AddCoupon"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Food.Coupon.AddCouponNew"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Food.GlobalSearch.SearchActivity" />
+        <activity android:name=".Food.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Food.education.EducationActivity" />
+        <activity android:name=".Food.login.LoginActivity" />
+        <activity android:name=".Food.register.RegisterActivity" />
+        <activity android:name=".Food.login.ForgotPasswordActivity" />
+        <activity android:name=".Food.login.ForgotConfirmationActivity" />
+        <activity android:name=".Food.selectlocation.SelectLocationActivity" />
+        <activity android:name=".Food.home.HomeActivity" />
+        <activity android:name=".Food.eatout.EatOutActivity" />
+        <activity android:name=".Food.eatout.RestaurantDetailsActivity" />
+        <activity android:name=".Food.eatout.SelectDayActivity" />
+        <activity android:name=".Food.notification.NotificationActivity" />
+        <activity android:name=".Food.faq.FaqActivity" />
+        <activity android:name=".Food.favourites.FavouritesActivity" />
+        <activity android:name=".Food.manageaddress.ManageAddressActivity" />
+        <activity android:name=".Food.manageaddress.AddAddressActivity" />
+        <activity android:name=".Food.ReferEarn.ReferandEarn" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_api" />
+
+        <activity android:name=".Food.eatout.SelectOfferActivity" />
+        <activity android:name=".Food.eatout.BookingSummaryActivity" />
+        <activity android:name=".Food.eatout.OTPVerificationActivity" />
+        <activity android:name=".Food.eatout.BookingDetailsActivity" />
+        <activity android:name=".Food.eatout.GetDirectionActivity" />
+        <activity
+            android:name=".Food.home.SearchRestaurantActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <activity
+            android:name=".Food.home.SearchLocationActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan|adjustNothing" />
+        <activity android:name=".Food.orderfood.OrderFoodDetailsActivity" />
+        <activity android:name=".Food.orderhistory.OrderSummaryActivity" />
+        <activity android:name=".Food.orderhistory.TrackOrderActivity" />
+        <activity android:name=".Food.orderfood.CheckOutActivity" />
+        <activity android:name=".Food.placeorder.PlaceOrderActivity" />
+        <activity android:name=".Food.placeorder.SelectPaymentActivity" />
+        <activity android:name=".Food.placeorder.AddCardActivity" />
+        <activity android:name=".Food.orderfood.CheckOutActivityFinal" />
+        <activity
+            android:name=".Food.eatout.RestaurantDetailsActivityCopy"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name=".Food.notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".Food.tracking.MainActivity" />
+        <activity android:name=".Food.home.SnacksActivity" />
+        <activity android:name=".Food.home.BreakfastActivity" />
+        <activity android:name=".Food.wallet.WalletActivity" />
+        <activity android:name=".Food.service.ServiceActivity" />
+        <activity android:name=".Food.form.FormActivity" />
+        <activity android:name=".Food.service.ServiceHistoryActivity" />
+        <activity android:name=".Food.orderfood.CheckOutActivityTakeAway" />
+        <activity android:name=".Grocery.activities.GroceryAddCartActivity" />
+        <activity android:name=".Grocery.activities.GroceryStoreSubCategoryActivity" />
+        <activity android:name=".Grocery.activities.GroceryStoreCategoryListActivity" />
+        <activity android:name=".Grocery.activities.GroceryShopStoreCategoryActivity" />
+        <activity android:name=".Grocery.activities.GroceryShopByStoreActivity" />
+        <activity android:name=".Grocery.activities.GroceryBestOfferListActivity" />
+        <activity android:name=".Grocery.activities.GroceryRecentPurchaseListActivity" />
+        <activity android:name=".Grocery.activities.GroceryShopProductListActivity" />
+        <activity android:name=".Grocery.activities.GroceryShopSubCategoryActivity" />
+        <activity android:name=".Grocery.activities.GroceryAddAddressActivity" />
+        <activity android:name=".Grocery.activities.GroceryManageAddressActivity" />
+        <activity android:name=".Grocery.activities.GroceryDetailActivity" />
+        <activity android:name=".Grocery.activities.GroceryBottomNavigationActivity" />
+        <activity android:name=".Grocery.activities.GroceryCheckOutActivityNew" />
+        <activity android:name=".Grocery.activities.GroceryCheckOutActivityFinal" />
+        <activity android:name=".Grocery.activities.GroceryOrderSummaryActivity" />
+        <activity android:name=".Grocery.activities.GroceryFavoriteListActivity" />
+        <activity android:name=".Grocery.activities.Groceryglobalsearch" />
+        <activity android:name=".Grocery.activities.GroceryNewlyLaunchesListActivity" />
+        <activity android:name=".Grocery.activities.GroceryBestSellingListActivity" />
+        <activity android:name=".Grocery.activities.GroceryAddCouponNew" />
+        <activity android:name=".Grocery.activities.GroceryCartitemActivity" />
+        <activity android:name=".Grocery.activities.GroceryOrderlistActivity" />
+        <activity android:name=".Grocery.activities.GroceryShopingListActivity" />
+        <activity android:name=".Grocery.activities.GrocerySearchActivity" />
+        <activity android:name=".Cakes.activities.CakeNormalCakeDetailActivity" />
+        <activity android:name=".Cakes.activities.CakeCoolCakeDetailActivity" />
+        <activity
+            android:name=".Cakes.activities.CakeDetailActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Cakes.activities.CakeShopCategoryActivity" />
+        <activity android:name=".Cakes.activities.CakeShopSubCategoryActivity" />
+        <activity android:name=".Cakes.activities.CakeShopStoreActivity" />
+        <activity android:name=".Cakes.activities.CakeSpecialCakeActivity" />
+        <activity android:name=".Cakes.activities.CakeCoolCakeActivity" />
+        <activity android:name=".Cakes.activities.CakeNormalCakeActivity" />
+        <activity android:name=".Cakes.activities.CakeCheckOutActivityNew" />
+        <activity android:name=".Cakes.activities.CakeCheckOutActivityFinal" />
+        <activity android:name=".Cakes.activities.CakeManageAddressActivity" />
+        <activity android:name=".Cakes.activities.CakeAddAddressActivity" />
+        <activity android:name=".Cakes.activities.CakeOrderSummaryActivity" />
+        <activity android:name=".Cakes.activities.CakeTrackingActivity" />
+        <activity android:name=".Cakes.activities.CakeCartitemActivity" />
+        <activity android:name=".Cakes.activities.CakeOrderlistActivity" />
+        <activity android:name=".Cakes.activities.CakeFavoriteListActivity" />
+        <activity android:name=".Cakes.activities.CakeAddCoupon" />
+        <activity android:name=".Cakes.activities.Cakeglobalsearch" />
+        <activity android:name=".Cakes.activities.CakeSearchActivity" />
+        <activity android:name=".Cakes.activities.CakeBottomNavigationActivity" />
+        <activity android:name=".Cakes.activities.StoreListByCategory" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.geekhive.foodey.provider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

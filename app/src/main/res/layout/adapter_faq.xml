@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_adfq_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingBottom="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vL_adfq_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/vT_adfq_que"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="I have an query related to placing my order"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_14" />
+
+        <ImageView
+            android:id="@+id/vI_adfq_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/vT_adfq_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Hi I have some queries, which I hope you will be able to help me with 1- If a person is seroconverting and has lymph nodes, will it come out at all the places or 3-4 lymphnodes in the neck can also be a sign of hiv"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_12" />
+
+</LinearLayout>

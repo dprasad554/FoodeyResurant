@@ -1,0 +1,496 @@
+<resources>
+    <string name="app_name">Foodey App</string>
+
+
+    <!--educational-->
+
+    <string name="skip">Skip</string>
+    <string name="select_res">Select your Restaurant</string>
+    <string name="select_res_sam">Select your restaurant and order food from their menu.</string>
+    <string name="select_food">Select your Food</string>
+    <string name="select_food_sam">There are lot of menus in our app. Just select your item and order that from your home.</string>
+    <string name="order_food">Order your Food</string>
+    <string name="order_res_sam">Place your order and get it delivered at you door step.</string>
+    <string name="get_started_now">Get started Now</string>
+    <string name="we_give_you">Food, Grocery, Cakes whatever is your choice we deliver it!!!. Just try ordering with our app, Let\'s get started.</string>
+    <string name="new_user">New User?</string>
+    <string name="login">Login</string>
+    <string name="guest_user">Guest User</string>
+
+    <!--Grocery-->
+
+    <string name="select_store">Select your Store</string>
+    <string name="select_res_store">Select your desired store and order grocery from their store</string>
+    <string name="select_grocery">Select your Grocery</string>
+    <string name="select_grocery_sam">There are many stores in our app. Just select your grocery items and order that from your home.</string>
+    <string name="order_grocery">Order your Grocery Items</string>
+    <string name="deliver_grocery">Get your order delivered at your door step</string>
+
+    <!--Cakes-->
+
+    <string name="select_cake">Select your Shop</string>
+    <string name="select_res_cake">Select your desired shop and order cake</string>
+    <string name="select_cake_item">Select your Cake Type</string>
+    <string name="select_cake_sam">There are many shops in our app. Just select your cake type and order that from your home.</string>
+    <string name="order_cake">Order your Cake</string>
+    <string name="deliver_cake">Get your order delivered at your door step</string>
+
+
+    <!--login-->
+    <string name="goody_foody">Foodey</string>
+    <string name="instant_food_delivery">Food . Grocery . Cake</string>
+    <string name="phone_num">Mobile Number</string>
+    <string name="name_email">Name or E-mail</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot?</string>
+    <string name="signup_now">Signup now</string>
+    <string name="signup">Signup</string>
+    <string name="signin_fb">Signin with Facebook</string>
+
+    <!--forgot-->
+    <string name="forgot_password">Forgot Password</string>
+    <string name="otp_auto">OTP Auto fetch</string>
+    <string name="otp">OTP</string>
+    <string name="enter_registered">Enter your registered mobile number</string>
+    <string name="otp_sent">One Time Password(OTP) has been sent to your mobile number. Please enter it here to verify.</string>
+    <string name="verify_now">Verify Now</string>
+    <string name="resend_code">Resend Code</string>
+
+    <string name="verify_mobile">Verify Mobile Number</string>
+    <string name="your_mobile">Your Mobile Number</string>
+    <string name="verify_">Verify</string>
+    <string name="verification_code">Verification code</string>
+
+    <string name="verified">Verified</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirmation Password</string>
+    <string name="update">Update</string>
+
+    <!--register-->
+    <string name="new_user_sign">New User? Signup</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="Password">Password</string>
+
+    <!--location-->
+    <string name="tell_us">Tell us your location</string>
+    <string name="this_help_us">this help us to recommend the best restaurants and offers around you.</string>
+    <string name="auto_detect">Auto detect my location</string>
+    <string name="no_i_will">No,I will type my location every time</string>
+
+    <!--home-->
+    <string name="home">Home</string>
+    <string name="booking">Bookings</string>
+    <string name="orders">Orders</string>
+    <string name="profile">Profile</string>
+    <string name="eat_out">Eat Out</string>
+    <string name="order_food_">Order Food</string>
+    <string name="order_now">Order Now</string>
+    <string name="frequently_searched">Frequently Searched</string>
+    <string name="offer_near">Offer Near You</string>
+    <string name="fast_delivery">Fast Delivery</string>
+    <string name="restaurants">Popular Restaurants</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="snacks">Snacks and Ice-Creams</string>
+    <string name="great_food">Great Food, No Bull</string>
+    <string name="see_all">View All</string>
+    <string name="eat_out_res">Eat Out Restaurants</string>
+    <string name="delivery_res">Delivery Restaurants</string>
+    <string name="great_offer_lunch">Great Offer on Lunch Buffet</string>
+
+    <!--eatout-->
+    <string name="buffet">Buffets</string>
+    <string name="bbq">BBQ</string>
+    <string name="pizza">Pizza</string>
+    <string name="drinks">Drinks</string>
+    <string name="biryani">Biryani</string>
+    <string name="new_">New</string>
+    <string name="budget">Budget</string>
+    <string name="all">All</string>
+    <string name="view_map">View Map</string>
+    <string name="event">Event</string>
+    <string name="live">Live</string>
+    <string name="open_now">Open Now</string>
+    <string name="view_all_outlets">View All Outlets</string>
+    <string name="book_a_dinning">Book a Dinning</string>
+
+
+    <string name="menu">Menu</string>
+    <string name="photos">Photos</string>
+    <string name="offer">Offer</string>
+    <string name="review">Review</string>
+    <string name="about_address">About &amp; Address</string>
+    <string name="leave_review">Leave a Review</string>
+    <string name="call">Call</string>
+    <string name="schedule">Schedule</string>
+    <string name="book_table">Book a Table</string>
+    <string name="address">Address</string>
+    <string name="all_day_dinning">All day dinning</string>
+    <string name="facilities">Facilities &amp; Features</string>
+    <string name="rate_review">Rate &amp; Review</string>
+    <string name="about_res">About Restaurant</string>
+    <string name="recommended_dish">Recommended Dish</string>
+    <string name="more">8\nMore</string>
+    <string name="sample">Baked goods are cooked by baking, a method of cooking food that uses prolonged dry heat.</string>
+    <string name="sample_max">Baked goods are cooked by baking, a method of cooking food that uses prolonged dry heat.Baked goods are cooked by baking, a method of cooking food that uses prolonged dry heat.</string>
+
+    <!--select day-->
+    <string name="fri">Fri\n21 JUN</string>
+    <string name="what_day">What day?</string>
+    <string name="after_noon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="select_day_time">Select Day &amp; Time</string>
+
+    <!--select offer-->
+    <string name="select_offer">Select Offer</string>
+    <string name="bookings">(Bookings)</string>
+    <string name="offer_reservation">Offer with Reservation</string>
+    <string name="reserve_table_get_dis">Reserve a table and get special discounts</string>
+
+    <!--booking_summary-->
+    <string name="booking_summary">Booking Summary</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="offer_selected">Offer Selected</string>
+    <string name="select_guest">Select No. of Guest</string>
+    <string name="guest_detail">Guest Details</string>
+    <string name="your_phone_number">Your Phone Number will be verified before Confirming the booking</string>
+    <string name="email_address">Email Address</string>
+    <string name="special_request">Special Request(if need)</string>
+    <string name="enter_name_phone">Enter Name &amp; Phone</string>
+
+    <!--booking_details-->
+    <string name="booking_received">Booking Received</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="no_of_guest">No. of Guests</string>
+    <string name="selected_offer">Selected Offer</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="view_restaurant_details">View Restaurant Details</string>
+    <string name="share_booking">Share this Booking</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="have_ques">Have Question</string>
+    <string name="cancellation_reason">Cancellation Reason</string>
+    <string name="outlet_location">Outlet Location</string>
+    <string name="you_will_get_confirmation">You will get confirmation notification from Restaurant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!--search-->
+    <string name="eat_dinning">Eat-Out or Dinning Out</string>
+    <string name="search_for_res">Search for restaurant, cuisine or dish..</string>
+    <string name="type_city">Type a city or neighborhood...</string>
+    <string name="location">Location</string>
+    <string name="Popular_location">Popular Location in Bangalore</string>
+
+    <!--bookings-->
+    <string name="upcoming">Upcoming</string>
+    <string name="history">History</string>
+    <string name="order_history">Order History</string>
+    <string name="table_booking">Table Booking</string>
+
+    <string name="nav_header_title">Username</string>
+    <!--order-->
+    <string name="delivery_boy">Delivery Boy</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="your_order_deliver">Your Order will be Delivered by 11.30AM</string>
+    <string name="items">Your Order</string>
+    <string name="item_list">Item List</string>
+    <string name="instruction">Add Cooking Instructions</string>
+    <string name="add">Add</string>
+    <string name="add_contact_person">Add a Contact Person</string>
+    <string name="add_item">Add Item</string>
+    <string name="order_live">Order Live Location</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="track_your_order">Track Your Order</string>
+    <string name="cod">Cash On Delivery</string>
+    <string name="order_no">Order No.</string>
+    <string name="order_details">Order Details</string>
+    <string name="discount">Discount (GoodFoodApp5%)</string>
+    <string name="free">Free</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="gst_cst">GST &amp; CST</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="charges">Charges</string>
+    <string name="view_breakdown">View Breakdown</string>
+    <string name="grand_total">Grand Total:</string>
+    <string name="your_order">Your Order</string>
+    <string name="order_id">Order Id</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="ordered_on">Ordered On</string>
+    <string name="delivery_charge">+ Delivery Charge</string>
+
+    <string name="schedule_later">Schedule for Later</string>
+    <string name="schedule_date_time">Schedule Day and Time</string>
+    <string name="confirm">Confirm</string>
+    <string name="place_order">Place the Order</string>
+    <string name="save_payment_methods">Save Payment Methods</string>
+    <string name="add_payment_methods">Add Payment Methods</string>
+
+    <!--profile-->
+    <string name="payment">Payment</string>
+    <string name="about">About Us</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="privacy">Privacy Policy</string>
+    <string name="refund">Refund Policy</string>
+    <string name="wallet">wallets</string>
+    <string name="online_pay">Online Payment</string>
+    <string name="cash">Cash</string>
+    <string name="continue_">Continue</string>
+    <string name="offers">Offers</string>
+    <string name="after_first">After your first payment we will save your card details for future use.</string>
+    <string name="signout">SignOut</string>
+    <string name="paytm">Paytm</string>
+    <string name="mobiikwik">Mobikwik</string>
+    <string name="freecharge">FreeCharge</string>
+    <string name="credit_debit">Credit &amp; Debit Cards</string>
+    <string name="sodexo">Sodexo Meal Pass</string>
+    <string name="netbanking">Netbanking</string>
+    <string name="add_card">Add a Card</string>
+    <string name="we_accept">We accept credit and debit from Visa, Mastercard, American Express, Repay, Sodexo, Discover</string>
+    <string name="name_on_card">Name on Card</string>
+    <string name="card_numb">Card Number</string>
+    <string name="bank">Bank</string>
+    <string name="expiry_date">Expiry Date (MM/YY)</string>
+    <string name="cvv">CVV</string>
+    <string name="nick_name">Nick name of card</string>
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+    <string name="others">Others</string>
+    <string name="you_card_date">Your card date is saved in a PCI CSS complaint secure vauit</string>
+    <string name="card_success">Card Successfully Added</string>
+    <string name="view_order_summary">View Order Summary</string>
+    <string name="card_name">Card Name</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="get_notification">You will get confirmation notification from restaurant within 5 mints.</string>
+    <string name="order_awaiting">Your order is on awaiting</string>
+    <string name="payment_success">Payment Successfully Done\nOrder Placed</string>
+
+    <!--manage address-->
+    <string name="manage_address">Manage Address</string>
+    <string name="saved_address">Saved Addresses</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="work">Work</string>
+    <string name="other">Other</string>
+    <string name="delete">Delete</string>
+    <string name="current_location">Current Location</string>
+    <string name="house_flat">House/flat Number</string>
+    <string name="apartment">Apartment/Building Name</string>
+    <string name="street">Street</string>
+    <string name="area">Area</string>
+    <string name="land_mark">Landmark</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="add_new_address">Add New Address</string>
+
+    <string name="place">Kadapa</string>
+
+    <!--favourties-->
+    <string name="favourites">Favourites</string>
+    <string name="your_fav_res">Choose from variety of snacks</string>
+
+    <!--faq-->
+    <string name="help_faq">Help FAQ</string>
+    <string name="general_queries">General Queries</string>
+
+    <!--Notification-->
+    <string name="notification">Notification</string>
+
+    <string name="google_map_api">AIzaSyB_RBQ5Le6REjSn35XB_f7_ufQmzETVOYY</string>
+
+    <string name="something_wrong">SomeThing Went Wrong</string>
+
+    <string name="title_permission">Location Permission</string>
+    <string name="title_read_permission">Read SMS</string>
+    <string name="ok">ok</string>
+    <string name="cart">Cart</string>
+
+    <string name="delete_list">Delete List</string>
+    <string name="are_you_sure_delete">Are you sure want to\ndelete your list?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_product">Remove Product</string>
+    <string name="are_you_sure_remove">Are you sure want to\nremove product from cart?</string>
+
+    <string name="remove_cart">Remove Cart Items</string>
+    <string name="are_you_sure_remove_cart">Are you sure want to\nremove cart items from cart?</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="terms">Terms and conditions</string>
+    <string name="disclaimer">Disclaimer</string>
+
+
+    <string name="AddCart">Add Cart</string>
+    <string name="shopStore">Shop By Store</string>
+    <string name="top">Top Store</string>
+    <string name="viewAll">View All</string>
+    <string name="recent">Recent Purchase </string>
+    <string name="best">Best Offer For You</string>
+    <string name="productName">Fruits &amp; Vegetables</string>
+
+    <!--Track Order-->
+    <string name="orderTrack">Order Pending</string>
+    <string name="orderNo">Order No : G324568</string>
+    <string name="orderReceive">Order Received</string>
+    <string name="orderConfirmed">Order Confirmed</string>
+    <string name="orderReceived">Order Received</string>
+    <string name="orderPrice">Rs 1200</string>
+
+    <!--Recent Order-->
+    <string name="productOffer">Rs 17 Off</string>
+    <string name="productNames">Horlicks | Nutritional Drink For Kids‎</string>
+    <string name="productOriginal">Rs 218</string>
+    <string name="productCut">Rs 235</string>
+    <string name="packSize">Pack Sizes</string>
+    <string name="cartonOne">200 g</string>
+    <string name="priceOne">MRP : Rs 222</string>
+    <string name="carton">Carton</string>
+    <string name="addCart">Add To Cart</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </string>
+
+    <!--Cart-->
+    <string name="itemList">Items Lists</string>
+    <string name="subTotal">Sub Total</string>
+    <string name="Total">Rs 1230</string>
+    <string name="disRupee">Rs 0 </string>
+    <string name="TaxCharge">Taxes &amp; Charges </string>
+    <string name="TaxRupee">Rs 61.5 </string>
+    <string name="PackCharge">Packing Charges</string>
+    <string name="packRupee">Rs 0 </string>
+    <string name="DeliveryCharge">Delivery Fee</string>
+    <string name="deliRupee">Rs 0 </string>
+    <string name="Grand">Grand Total</string>
+    <string name="graRupee">Rs 1291.5 </string>
+    <string name="saving">Your Saving</string>
+    <string name="saveMoney">Rs 0</string>
+    <string name="checkout">CheckOut</string>
+    <string name="remove">Remove Cart Items</string>
+
+    <!--Manage Address-->
+    <string name="saved">Saved Address</string>
+    <string name="addAddress">Add Address</string>
+
+    <string name="fruitsVeg">Fruits &amp; Vegetables</string>
+
+    <!--Category Detail List-->
+    <string name="category">Grocery &amp; Staples</string>
+    <string name="aatta">Aasshirvaad</string>
+    <string name="aattaTag"> Atta - Whole Wheat</string>
+    <string name="aattaPrice">MRP : Rs 480</string>
+    <string name="aattaPriceNew">Rs 382.80</string>
+
+    <!--Shop By Store Category-->
+    <string name="shopStoreCategory">Store Category</string>
+    <string name="shopStoreAddress">Kadapa, Andhra Pradesh</string>
+
+
+    <string name="specialCakes">Special Cakes</string>
+    <string name="coolCakes">Cool Cakes</string>
+    <string name="normalCakes">Normal Cakes</string>
+    <string name="flowerCakes">Flowers Cakes</string>
+    <string name="otherCakes">Other Cakes</string>
+    <string name="banana">Banana Cake Cheese</string>
+    <string name="india">By India Cake</string>
+    <string name="just">Just Bake Cake</string>
+    <string name="amma">Amma\'s Pastry</string>
+    <string name="delivery">Delivery Time : 12hrs (Working hr)</string>
+    <string name="shopaddress">Address : HSR LAYOUT</string>
+    <string name="rate">4.4</string>
+    <string name="special">Only Special Cake</string>
+    <string name="view">View On Map</string>
+    <string name="open">Open Now</string>
+    <string name="birthday">Birthday Cake Special</string>
+    <string name="welcome">Welcome Cake Special </string>
+    <string name="anniversary">Anniversary Cake Special</string>
+    <string name="wedding">Wedding Cake Special</string>
+    <string name="cakes">Cakes</string>
+    <string name="mList">Menu List</string>
+    <string name="description">Description</string>
+    <string name="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+    <!--BottomNavigation-->
+
+    <!--Cake Deatil Screen-->
+    <string name="message">Any Message On Cake</string>
+
+    <!--Home Fragment-->
+    <string name="shopCategory">Shop By Category</string>
+
+
+    <!--checkout-->
+    <string name="pay">Pay</string>
+    <string name="add_c">ADD</string>
+    <string name="shipping">Shipping</string>
+    <string name="total">Total</string>
+    <string name="change">Change</string>
+    <string name="delivery_mode">Delivery Mode</string>
+    <string name="delivery_address">Delivery address</string>
+    <string name="delivery_info">Delivery Information</string>
+    <string name="price_details">Price Details</string>
+    <string name="cast_payment">Cast &amp; Payment Information</string>
+    <string name="dummy_address">88/A, S V R Platina, Adjacent to K S S I D C Complex, Electronics City Phase 1, Bengaluru, Karnataka 560100</string>
+    <string name="no_address">No address available.\nPlease add your delivery address.</string>
+    <string name="normal_delivery">Normal Delivery</string>
+    <string name="schedule_delivery">Schedule Delivery</string>
+    <string name="pickup_schedule">Pickup Schedule</string>
+    <string name="pickup_at_store">Pickup at Store</string>
+    <string name="when_to_deliver">When to deliver?</string>
+    <string name="when_you_will_pick">When you will pickup?</string>
+    <string name="no_internet">no internet connection</string>
+    <string name="cakeSize">Cake QTY</string>
+
+
+    <!---Refer and Earn -->
+    <string name="refer_earn">Refer &amp; Earn</string>
+    <string name="refer_txt">Refer Your Friends and Earn 50 points</string>
+    <string name="refer_code_txt">REFERRAL CODE</string>
+    <string name="r_code">X765GTR86</string>
+
+    <string name="cooking_instructions">Special Cooking instructions</string>
+    <string name="instruction_txt">The restauarant will follow your instructions on the best effort basis. No refunds or cancellations will be processed bsed on failure to comply with requests for special instructions</string>
+    <string name="coupon">Apply Coupon</string>
+    <string name="store_instruction_txt">The store will follow your instructions on the best effort basis. No refunds or cancellations will be processed bsed on failure to comply with requests for special instructions</string>
+
+
+    <string name="tips">Add Tips to Delivery</string>
+
+    <string name="coupon_txt">Get 30% off up to ₹ 100 on 2 orders with HDFC bank PayZapp Prepaid card.</string>
+    <string name="coupon_valid">Valid on orders of ₹200 and above. </string>
+
+    <string name="tips_txt">The entire amount will be transferred to the rider. Valid only if you pay online</string>
+
+
+    <string name="point5">+ ₹5</string>
+    <string name="point10">+ ₹10</string>
+    <string name="point25">+ ₹25</string>
+
+    <string name="offer_txt">50% upto Rs.100, Min Order Rs.50</string>
+
+
+    <string name="type_global_search">Search Restaurants or food</string>
+
+    <string name="confirmtext">Are you sure you want to confirm?</string>
+
+    <string name="my_wallet">My wallet</string>
+
+    <string name="dboy_name">Karthik Kumar</string>
+
+    <string name="orderplaced">Once ordered can not be canceled</string>
+
+    <string name="storeinstruction">Instruction for Store</string>
+
+
+</resources>

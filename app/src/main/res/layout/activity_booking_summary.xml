@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Food.eatout.BookingSummaryActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vT_abs_booking_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/booking_summary"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_abs_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/date_time"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/vT_abs_dateval"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thu 28 Jun 4.30PM"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_abs_offer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/offer_selected"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/vT_abs_offerval"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="35% off on Buffet"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/vT_abs_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/select_guest"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vR_abs_guest"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+                <ImageView
+                    android:id="@+id/vI_abs_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right_arrow_small"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/vT_abs_guest_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/guest_detail"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+            <TextView
+                android:id="@+id/vT_abs_phone_verified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/your_phone_number"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/vT_abs_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+                <EditText
+                    android:id="@+id/vE_abs_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/text_16"
+                    android:theme="@style/EditTextTheme" />
+                <TextView
+                    android:id="@+id/vT_abs_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/phone"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+                <EditText
+                    android:id="@+id/vE_abs_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/text_16"
+                    android:theme="@style/EditTextTheme" />
+
+                <TextView
+                    android:id="@+id/vT_abs_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start"
+                    android:text="@string/email_address"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/payment_option_2"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+                <EditText
+                    android:id="@+id/vE_abs_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:visibility="gone"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/text_16"
+                    android:theme="@style/EditTextTheme" />
+                <TextView
+                    android:id="@+id/vT_abs_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start"
+                    android:text="@string/special_request"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/payment_option_2"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+                <EditText
+                    android:id="@+id/vE_abs_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:paddingStart="5dp"
+                    android:singleLine="false"
+                    android:layout_marginBottom="20dp"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/text_16"
+                    android:theme="@style/EditTextTheme" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/gradient_black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/vT_abs_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_name_phone"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/vT_abs_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/circle_green_corner_bend"
+            android:gravity="center"
+            android:paddingEnd="55dp"
+            android:paddingStart="55dp"
+            android:text="@string/continue_"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+</LinearLayout>

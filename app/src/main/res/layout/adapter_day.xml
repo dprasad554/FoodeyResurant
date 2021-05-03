@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_addy_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/circle_grey__corner_bend"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/vT_addy_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:lineSpacingExtra="6dp"
+        android:text="@string/fri"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_14" />
+
+</LinearLayout>

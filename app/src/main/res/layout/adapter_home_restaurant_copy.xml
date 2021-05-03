@@ -1,0 +1,114 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vC_adhg_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@null"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/vI_adhg_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/great_food"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/vT_adhg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Flechzo"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/vT_adhg_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Whitefield,Bangalore"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:id="@+id/vT_adhg_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="Causal Dinning - Asian - BBQ"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vT_adhg_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/background_curvegreen"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="25 Mins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_10" />
+
+                <TextView
+                    android:id="@+id/vT_adhg_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/layout_margin10"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="@string/great_offer_lunch"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_10" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

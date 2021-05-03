@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_viewMain"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="2dp"
+        android:layout_margin="1dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_bestImage"
+                android:layout_width="600dp"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/productslidetwo" />
+
+            <TextView
+                android:id="@+id/tv_productTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horlicks Nutritional\nDrink For Kids‎"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/colorLightBlack"
+                android:layout_below="@id/iv_bestImage"
+                />
+
+            <TextView
+                android:id="@+id/tv_productQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Kg‎"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorLightBlack"
+                android:layout_below="@id/tv_productTitle"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/tv_productQty"
+                >
+
+                <TextView
+                    android:id="@+id/productNows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 225"
+                    android:textSize="9sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorGreen"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_productOriginals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 200"
+                    android:textSize="9sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="8sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorLightBlack"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_productCuts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10% OFF"
+                    android:textSize="9sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="8sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorLightBlack"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addCart"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="@string/addCart"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_round"
+                android:layout_below="@id/linearOne"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

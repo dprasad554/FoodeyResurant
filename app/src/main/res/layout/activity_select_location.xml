@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".Food.login.LoginActivity">
+    <ImageView
+        android:id="@+id/vI_asl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="start"
+        android:background="@drawable/back_arrow"
+        android:contentDescription="@string/app_name" />
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/location_illustration"/>
+    <TextView
+        android:id="@+id/vT_asl_tellus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tell_us"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_18" />
+    <TextView
+        android:id="@+id/vT_asl_this"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/this_help_us"
+        android:gravity="center"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_14" />
+    <TextView
+        android:id="@+id/vT_asl_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_green_corner_bend"
+        android:gravity="center"
+        android:paddingEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="50dp"
+        android:drawableStart="@drawable/auto_direct_my_location"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:text="@string/auto_detect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16" />
+    <TextView
+        android:id="@+id/vT_asl_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/no_i_will"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_14" />
+
+
+</LinearLayout>

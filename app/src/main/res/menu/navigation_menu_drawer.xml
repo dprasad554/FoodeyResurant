@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_us"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/contact_us"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="@string/my_wallet" />
+        <item
+            android:id="@+id/nav_refer_earn"
+            android:icon="@drawable/refer_earn"
+            android:title="@string/refer_earn" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy" />
+        <item
+            android:id="@+id/nav_refund"
+            android:icon="@drawable/refund"
+            android:title="@string/refund" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/term"
+            android:title="@string/terms" />
+        <item
+            android:id="@+id/nav_disclaimer"
+            android:icon="@drawable/advise"
+            android:title="@string/disclaimer" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/signout"
+            android:title="@string/signout" />
+
+    </group>
+
+
+
+</menu>

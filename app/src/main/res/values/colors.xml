@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b2a47</color>
+    <color name="colorPrimaryDark">#1b2a47</color>
+    <color name="colorAccent">#1b2a47</color>
+
+    <color name="map_line">#FF3051</color>
+    <color name="colorLightGreen">#84B88D</color>
+    <color name="colorLightBlue">#1b2a47</color>
+    <color name="colorRed">#1b2a47</color>
+
+
+    <!--Dot Color-->
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGolden">#FFD700</color>
+    <color name="colorBlue">#2d3561</color>
+    <color name="colorGrey">#7786A5</color>
+    <color name="colorNewBlue">#1b2a47</color>
+    <color name="colorBackground">#E9E9F3</color>
+
+    <!--Dot Color-->
+    <color name="active_dots">#E65100</color>
+    <color name="inactive_dots">#333333</color>
+    <color name="colorLightBlack">#333333</color>
+    <color name="colorGreen">#0E972F</color>
+
+
+    <color name="expo_bg">#ECECEC</color>
+    <color name="text_color_light">#606060</color>
+    <color name="red">#1b2a47</color>
+    <color name="text_color">#000000</color>
+    <color name="hint_color">#40000000</color>
+    <color name="hint_color_bg">#08153F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_t">#90ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orangered">#FF4500</color>
+    <color name="white_t2">#40ffffff</color>
+    <color name="nav_bg">#FAFAFA</color>
+    <color name="bg">#F1EFEF</color>
+    <color name="grey">#606060</color>
+    <color name="grey_l">#E4E4E4</color>
+    <color name="green">#00BB00</color>
+    <color name="green_1">#2CD24B</color>
+    <color name="green_2">#73E459</color>
+    <color name="blue">#2296BC</color>
+    <color name="trans_text40">#80233251</color>
+    <color name="trans_textblack40">#80000000</color>
+    <color name="cake_back">#00bfff</color>
+    <color name="servicies">#867979</color>
+    <color name="back_">#99a4a6</color>
+    <color name="search_bg">#EFF8E7</color>
+
+    <color name="cblue">#87CEFA</color>
+    <color name="cpurple">#DDA0DD</color>
+    <color name="corange">#FFDEAD</color>
+
+    <color name="cb1">#FAEBD7</color>
+    <color name="cb2">#DAA520</color>
+    <color name="cb3">#FFF8DC</color>
+</resources>

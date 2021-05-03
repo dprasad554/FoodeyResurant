@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Food.eatout.SelectDayActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/vL_asd_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vT_asd_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/what_day"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/vC_asd_calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:selectedDateBackground="@drawable/circle_red__corner_bend"
+                app:selectorColor="@color/colorPrimary"
+                android:background="@color/expo_bg"
+                app:textColorNormal="@color/text_color"
+                app:textColorSelected="@color/white"
+                android:visibility="gone"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vR_asd_calender"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/vT_asd_after"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/after_noon"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_16" />
+                <ImageView
+                    android:id="@+id/vI_asd_after"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vR_asd_after"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/expo_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/vT_asd_eve"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/evening"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_16" />
+                <ImageView
+                    android:id="@+id/vI_asd_eve"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vR_asd_eve"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

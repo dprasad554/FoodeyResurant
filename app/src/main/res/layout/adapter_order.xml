@@ -1,0 +1,428 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/vC_ado_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingStart="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:paddingStart="7sp"
+                    android:paddingTop="@dimen/layout_margin10"
+                    android:paddingBottom="@dimen/layout_margin10"
+                    android:text="Order Summary"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_18" />
+
+                <ImageView
+                    android:id="@+id/close_popup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16sp"
+                    android:src="@drawable/close_popup" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vT_restaurant_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Rayalseema"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/vT_address_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:lines="2"
+                        android:text="BTM"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_10" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vT_ado_pname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:singleLine="true"
+                            android:text="Order Status"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_13" />
+
+                        <TextView
+                            android:id="@+id/vT_ado_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.4"
+                            android:gravity="right"
+                            android:paddingStart="10dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="5dp"
+                            android:text="Pending"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/text_13" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_ado_orderid_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="0.3"
+                android:singleLine="true"
+                android:text="FA25136"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/expo_bg" />
+
+            <LinearLayout
+                android:id="@+id/vL_ado_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/vT_ado_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="@string/items"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/expo_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vT_item_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20sp"
+                        android:padding="10sp"
+                        android:text="Biriyani"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/vR_ard_menulist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_l" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vT_aco_sub_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_weight="0.7"
+                        android:text="@string/sub_total"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/vT_aco_sub_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹ 300"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_margin5"
+                        android:layout_weight="0.7"
+                        android:text="Discount"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/vT_discount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/layout_margin5"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="- ₹ 25"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/layout_margin5"
+                        android:layout_marginTop="3sp"
+                        android:layout_weight="0.7"
+                        android:text="Taxes and charges"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/vT_taxes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹ 15"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/layout_margin5"
+                        android:layout_weight="0.7"
+                        android:text="Packaging Charges"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/vT_packaging"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/layout_margin5"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹ 10"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/layout_margin5"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.7"
+                        android:text="Delivery Fees"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/vT_delivery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹ 30"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_l" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="16sp"
+                    android:paddingBottom="16sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.7"
+                        android:text="Grand Total"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vT_grand_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin5"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.3"
+                        android:gravity="right"
+                        android:text="₹ 330"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_l" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_l" />
+
+
+                <TextView
+                    android:id="@+id/vT_ado_orderonval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginBottom="16sp"
+                    android:layout_weight="0.3"
+                    android:singleLine="true"
+                    android:text="28 July 2018 at 3:45PM"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_12"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

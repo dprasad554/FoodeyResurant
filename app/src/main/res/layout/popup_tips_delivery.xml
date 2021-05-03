@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_l" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tips"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/tips_txt"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/vB_pnt5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/text_16"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_corner"
+                android:text="@string/point5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <Button
+                android:id="@+id/vB_pnt10"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/text_16"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_corner"
+                android:text="@string/point10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+            <Button
+                android:id="@+id/vB_pnt20"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/text_16"
+                android:layout_weight="0.3"
+                android:background="@drawable/rounded_corner"
+                android:text="+ ₹15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_red__corner_bend"
+            android:text="Pay"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slider_bg"
+    android:orientation="vertical"
+    tools:context=".Food.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vI_afc_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_2"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/vT_afc_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mobile"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/vT_afc_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16"
+                android:layout_marginStart="5dp"
+                android:text="9876543211" />
+            <TextView
+                android:id="@+id/vT_afc_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_16"
+                android:layout_marginStart="10dp"
+                android:text="@string/verified" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vT_afc_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/reset_pass"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password"
+                android:contentDescription="@string/app_name" />
+
+            <EditText
+                android:id="@+id/vE_afc_new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="@string/new_pass"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/text_16"
+                android:theme="@style/EditTextTheme" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password"
+                android:contentDescription="@string/app_name" />
+
+            <EditText
+                android:id="@+id/vE_afc_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="@string/confirm_pass"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/text_16"
+                android:theme="@style/EditTextTheme" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/vT_afc_update"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/circle_green_corner_bend"
+            android:gravity="center"
+            android:paddingEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="50dp"
+            android:layout_gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+
+</RelativeLayout>

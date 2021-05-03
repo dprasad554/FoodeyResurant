@@ -1,0 +1,218 @@
+// Generated code from Butter Knife. Do not modify!
+package com.geekhive.foodey.Food.eatout;
+
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import androidx.annotation.CallSuper;
+import androidx.annotation.UiThread;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.RecyclerView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.geekhive.foodey.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class RestaurantDetailsActivity_ViewBinding implements Unbinder {
+  private RestaurantDetailsActivity target;
+
+  @UiThread
+  public RestaurantDetailsActivity_ViewBinding(RestaurantDetailsActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public RestaurantDetailsActivity_ViewBinding(RestaurantDetailsActivity target, View source) {
+    this.target = target;
+
+    target.vIArdImage = Utils.findRequiredViewAsType(source, R.id.vI_ard_image, "field 'vIArdImage'", ImageView.class);
+    target.vIArdBack = Utils.findRequiredViewAsType(source, R.id.vI_ard_back, "field 'vIArdBack'", ImageView.class);
+    target.vTArdPhotos = Utils.findRequiredViewAsType(source, R.id.vT_ard_photos, "field 'vTArdPhotos'", TextView.class);
+    target.vTArdName = Utils.findRequiredViewAsType(source, R.id.vT_ard_name, "field 'vTArdName'", TextView.class);
+    target.vTArdStatus = Utils.findRequiredViewAsType(source, R.id.vT_ard_status, "field 'vTArdStatus'", TextView.class);
+    target.vTArdPlace = Utils.findRequiredViewAsType(source, R.id.vT_ard_place, "field 'vTArdPlace'", TextView.class);
+    target.vTArdTiming = Utils.findRequiredViewAsType(source, R.id.vT_ard_timing, "field 'vTArdTiming'", TextView.class);
+    target.vTArdPrice = Utils.findRequiredViewAsType(source, R.id.vT_ard_price, "field 'vTArdPrice'", TextView.class);
+    target.vTArdStyle = Utils.findRequiredViewAsType(source, R.id.vT_ard_style, "field 'vTArdStyle'", TextView.class);
+    target.vTArdViewmap = Utils.findRequiredViewAsType(source, R.id.vT_ard_viewmap, "field 'vTArdViewmap'", TextView.class);
+    target.vTArdRating = Utils.findRequiredViewAsType(source, R.id.vT_ard_rating, "field 'vTArdRating'", TextView.class);
+    target.vRArdMain = Utils.findRequiredViewAsType(source, R.id.vR_ard_main, "field 'vRArdMain'", RelativeLayout.class);
+    target.vCArdCollapsingToolbar = Utils.findRequiredViewAsType(source, R.id.vC_ard_collapsing_toolbar, "field 'vCArdCollapsingToolbar'", CollapsingToolbarLayout.class);
+    target.vAArdAppbar = Utils.findRequiredViewAsType(source, R.id.vA_ard_appbar, "field 'vAArdAppbar'", AppBarLayout.class);
+    target.vCArdBanner = Utils.findRequiredViewAsType(source, R.id.vC_ard_banner, "field 'vCArdBanner'", CardView.class);
+    target.vTArdMenu = Utils.findRequiredViewAsType(source, R.id.vT_ard_menu, "field 'vTArdMenu'", TextView.class);
+    target.vTArdSeeall = Utils.findRequiredViewAsType(source, R.id.vT_ard_seeall, "field 'vTArdSeeall'", TextView.class);
+    target.vLArdMenu = Utils.findRequiredViewAsType(source, R.id.vL_ard_menu, "field 'vLArdMenu'", LinearLayout.class);
+    target.vRArdMenulist = Utils.findRequiredViewAsType(source, R.id.vR_ard_menulist, "field 'vRArdMenulist'", RecyclerView.class);
+    target.vTArdRecommended = Utils.findRequiredViewAsType(source, R.id.vT_ard_recommended, "field 'vTArdRecommended'", TextView.class);
+    target.vTArdRecommendedValue = Utils.findRequiredViewAsType(source, R.id.vT_ard_recommended_value, "field 'vTArdRecommendedValue'", TextView.class);
+    target.vTArdAbout = Utils.findRequiredViewAsType(source, R.id.vT_ard_about, "field 'vTArdAbout'", TextView.class);
+    target.vTArdAboutval = Utils.findRequiredViewAsType(source, R.id.vT_ard_aboutval, "field 'vTArdAboutval'", TextView.class);
+    target.vTArdFacilities = Utils.findRequiredViewAsType(source, R.id.vT_ard_facilities, "field 'vTArdFacilities'", TextView.class);
+    target.vRArdFacilities = Utils.findRequiredViewAsType(source, R.id.vR_ard_facilities, "field 'vRArdFacilities'", RecyclerView.class);
+    target.vTArdOpen = Utils.findRequiredViewAsType(source, R.id.vT_ard_open, "field 'vTArdOpen'", TextView.class);
+    target.vTArdDay = Utils.findRequiredViewAsType(source, R.id.vT_ard_day, "field 'vTArdDay'", TextView.class);
+    target.vTArdAllDayDinning = Utils.findRequiredViewAsType(source, R.id.vT_ard_all_day_dinning, "field 'vTArdAllDayDinning'", TextView.class);
+    target.vTArdTimingDinning = Utils.findRequiredViewAsType(source, R.id.vT_ard_timing_dinning, "field 'vTArdTimingDinning'", TextView.class);
+    target.vTArdAddress = Utils.findRequiredViewAsType(source, R.id.vT_ard_address, "field 'vTArdAddress'", TextView.class);
+    target.vTArdAddressval = Utils.findRequiredViewAsType(source, R.id.vT_ard_addressval, "field 'vTArdAddressval'", TextView.class);
+    target.vTArdMapDown = Utils.findRequiredViewAsType(source, R.id.vT_ard_map_down, "field 'vTArdMapDown'", TextView.class);
+    target.vTArdMobile = Utils.findRequiredViewAsType(source, R.id.vT_ard_mobile, "field 'vTArdMobile'", TextView.class);
+    target.vTArdCall = Utils.findRequiredViewAsType(source, R.id.vT_ard_call, "field 'vTArdCall'", TextView.class);
+    target.vTArdRateReview = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate_review, "field 'vTArdRateReview'", TextView.class);
+    target.vTArdRateWhole = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate_whole, "field 'vTArdRateWhole'", TextView.class);
+    target.vTArdRate5 = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate5, "field 'vTArdRate5'", TextView.class);
+    target.vPArdFive = Utils.findRequiredViewAsType(source, R.id.vP_ard_five, "field 'vPArdFive'", ProgressBar.class);
+    target.vTArdRate5Ppl = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate5_ppl, "field 'vTArdRate5Ppl'", TextView.class);
+    target.vTArdRate4 = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate4, "field 'vTArdRate4'", TextView.class);
+    target.vPArdFour = Utils.findRequiredViewAsType(source, R.id.vP_ard_four, "field 'vPArdFour'", ProgressBar.class);
+    target.vTArdRate4Ppl = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate4_ppl, "field 'vTArdRate4Ppl'", TextView.class);
+    target.vTArdRate3 = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate3, "field 'vTArdRate3'", TextView.class);
+    target.vPArdThree = Utils.findRequiredViewAsType(source, R.id.vP_ard_three, "field 'vPArdThree'", ProgressBar.class);
+    target.vTArdRate3Ppl = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate3_ppl, "field 'vTArdRate3Ppl'", TextView.class);
+    target.vTArdRate2 = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate2, "field 'vTArdRate2'", TextView.class);
+    target.vPArdTwo = Utils.findRequiredViewAsType(source, R.id.vP_ard_two, "field 'vPArdTwo'", ProgressBar.class);
+    target.vTArdRate2Ppl = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate2_ppl, "field 'vTArdRate2Ppl'", TextView.class);
+    target.vTArdRate1 = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate1, "field 'vTArdRate1'", TextView.class);
+    target.vPArdOne = Utils.findRequiredViewAsType(source, R.id.vP_ard_one, "field 'vPArdOne'", ProgressBar.class);
+    target.vTArdRate1Ppl = Utils.findRequiredViewAsType(source, R.id.vT_ard_rate1_ppl, "field 'vTArdRate1Ppl'", TextView.class);
+    target.vTArdLeave = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave, "field 'vTArdLeave'", TextView.class);
+    target.vTArdLeave1 = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave1, "field 'vTArdLeave1'", TextView.class);
+    target.vIArdLeave1 = Utils.findRequiredViewAsType(source, R.id.vI_ard_leave1, "field 'vIArdLeave1'", ImageView.class);
+    target.vTArdLeave2 = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave2, "field 'vTArdLeave2'", TextView.class);
+    target.vIArdLeave2 = Utils.findRequiredViewAsType(source, R.id.vI_ard_leave2, "field 'vIArdLeave2'", ImageView.class);
+    target.vTArdLeave3 = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave3, "field 'vTArdLeave3'", TextView.class);
+    target.vIArdLeave3 = Utils.findRequiredViewAsType(source, R.id.vI_ard_leave3, "field 'vIArdLeave3'", ImageView.class);
+    target.vTArdLeave4 = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave4, "field 'vTArdLeave4'", TextView.class);
+    target.vIArdLeave4 = Utils.findRequiredViewAsType(source, R.id.vI_ard_leave4, "field 'vIArdLeave4'", ImageView.class);
+    target.vTArdLeave5 = Utils.findRequiredViewAsType(source, R.id.vT_ard_leave5, "field 'vTArdLeave5'", TextView.class);
+    target.vIArdLeave5 = Utils.findRequiredViewAsType(source, R.id.vI_ard_leave5, "field 'vIArdLeave5'", ImageView.class);
+    target.vRArdReview = Utils.findRequiredViewAsType(source, R.id.vR_ard_review, "field 'vRArdReview'", RecyclerView.class);
+    target.vTArdOrder = Utils.findRequiredViewAsType(source, R.id.vT_ard_order, "field 'vTArdOrder'", TextView.class);
+    target.vTArdBook = Utils.findRequiredViewAsType(source, R.id.vT_ard_book, "field 'vTArdBook'", TextView.class);
+    target.vTArdOffer = Utils.findRequiredViewAsType(source, R.id.vT_ard_offer, "field 'vTArdOffer'", TextView.class);
+    target.vVArdOffer = Utils.findRequiredView(source, R.id.vV_ard_offer, "field 'vVArdOffer'");
+    target.vLArdOffer = Utils.findRequiredViewAsType(source, R.id.vL_ard_offer, "field 'vLArdOffer'", LinearLayout.class);
+    target.vTArdMenuT = Utils.findRequiredViewAsType(source, R.id.vT_ard_menu_t, "field 'vTArdMenuT'", TextView.class);
+    target.vVArdMenuT = Utils.findRequiredView(source, R.id.vV_ard_menu_t, "field 'vVArdMenuT'");
+    target.vLArdMenuT = Utils.findRequiredViewAsType(source, R.id.vL_ard_menu_t, "field 'vLArdMenuT'", LinearLayout.class);
+    target.vTArdAboutAddress = Utils.findRequiredViewAsType(source, R.id.vT_ard_about_address, "field 'vTArdAboutAddress'", TextView.class);
+    target.vVArdAboutAddress = Utils.findRequiredView(source, R.id.vV_ard_about_address, "field 'vVArdAboutAddress'");
+    target.vLArdAboutAddress = Utils.findRequiredViewAsType(source, R.id.vL_ard_about_address, "field 'vLArdAboutAddress'", LinearLayout.class);
+    target.vTArdReview = Utils.findRequiredViewAsType(source, R.id.vT_ard_review, "field 'vTArdReview'", TextView.class);
+    target.vVArdReview = Utils.findRequiredView(source, R.id.vV_ard_review, "field 'vVArdReview'");
+    target.vLArdReview = Utils.findRequiredViewAsType(source, R.id.vL_ard_review, "field 'vLArdReview'", LinearLayout.class);
+    target.vLArdSlidingTabs = Utils.findRequiredViewAsType(source, R.id.vL_ard_sliding_tabs, "field 'vLArdSlidingTabs'", LinearLayout.class);
+    target.vIArdCart = Utils.findRequiredViewAsType(source, R.id.vI_ard_cart, "field 'vIArdCart'", ImageView.class);
+    target.vLArdMenuFull = Utils.findRequiredViewAsType(source, R.id.vL_ard_menu_full, "field 'vLArdMenuFull'", LinearLayout.class);
+    target.vLArdRateFull = Utils.findRequiredViewAsType(source, R.id.vL_ard_rate_full, "field 'vLArdRateFull'", LinearLayout.class);
+    target.vLArdAboutFull = Utils.findRequiredViewAsType(source, R.id.vL_ard_about_full, "field 'vLArdAboutFull'", LinearLayout.class);
+    target.toolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'toolbar'", Toolbar.class);
+    target.vNArdNested = Utils.findRequiredViewAsType(source, R.id.vN_ard_nested, "field 'vNArdNested'", NestedScrollView.class);
+    target.offerHeading = Utils.findRequiredViewAsType(source, R.id.offerHeading, "field 'offerHeading'", TextView.class);
+    target.offerDetails = Utils.findRequiredViewAsType(source, R.id.offerDetails, "field 'offerDetails'", TextView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    RestaurantDetailsActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.vIArdImage = null;
+    target.vIArdBack = null;
+    target.vTArdPhotos = null;
+    target.vTArdName = null;
+    target.vTArdStatus = null;
+    target.vTArdPlace = null;
+    target.vTArdTiming = null;
+    target.vTArdPrice = null;
+    target.vTArdStyle = null;
+    target.vTArdViewmap = null;
+    target.vTArdRating = null;
+    target.vRArdMain = null;
+    target.vCArdCollapsingToolbar = null;
+    target.vAArdAppbar = null;
+    target.vCArdBanner = null;
+    target.vTArdMenu = null;
+    target.vTArdSeeall = null;
+    target.vLArdMenu = null;
+    target.vRArdMenulist = null;
+    target.vTArdRecommended = null;
+    target.vTArdRecommendedValue = null;
+    target.vTArdAbout = null;
+    target.vTArdAboutval = null;
+    target.vTArdFacilities = null;
+    target.vRArdFacilities = null;
+    target.vTArdOpen = null;
+    target.vTArdDay = null;
+    target.vTArdAllDayDinning = null;
+    target.vTArdTimingDinning = null;
+    target.vTArdAddress = null;
+    target.vTArdAddressval = null;
+    target.vTArdMapDown = null;
+    target.vTArdMobile = null;
+    target.vTArdCall = null;
+    target.vTArdRateReview = null;
+    target.vTArdRateWhole = null;
+    target.vTArdRate5 = null;
+    target.vPArdFive = null;
+    target.vTArdRate5Ppl = null;
+    target.vTArdRate4 = null;
+    target.vPArdFour = null;
+    target.vTArdRate4Ppl = null;
+    target.vTArdRate3 = null;
+    target.vPArdThree = null;
+    target.vTArdRate3Ppl = null;
+    target.vTArdRate2 = null;
+    target.vPArdTwo = null;
+    target.vTArdRate2Ppl = null;
+    target.vTArdRate1 = null;
+    target.vPArdOne = null;
+    target.vTArdRate1Ppl = null;
+    target.vTArdLeave = null;
+    target.vTArdLeave1 = null;
+    target.vIArdLeave1 = null;
+    target.vTArdLeave2 = null;
+    target.vIArdLeave2 = null;
+    target.vTArdLeave3 = null;
+    target.vIArdLeave3 = null;
+    target.vTArdLeave4 = null;
+    target.vIArdLeave4 = null;
+    target.vTArdLeave5 = null;
+    target.vIArdLeave5 = null;
+    target.vRArdReview = null;
+    target.vTArdOrder = null;
+    target.vTArdBook = null;
+    target.vTArdOffer = null;
+    target.vVArdOffer = null;
+    target.vLArdOffer = null;
+    target.vTArdMenuT = null;
+    target.vVArdMenuT = null;
+    target.vLArdMenuT = null;
+    target.vTArdAboutAddress = null;
+    target.vVArdAboutAddress = null;
+    target.vLArdAboutAddress = null;
+    target.vTArdReview = null;
+    target.vVArdReview = null;
+    target.vLArdReview = null;
+    target.vLArdSlidingTabs = null;
+    target.vIArdCart = null;
+    target.vLArdMenuFull = null;
+    target.vLArdRateFull = null;
+    target.vLArdAboutFull = null;
+    target.toolbar = null;
+    target.vNArdNested = null;
+    target.offerHeading = null;
+    target.offerDetails = null;
+  }
+}

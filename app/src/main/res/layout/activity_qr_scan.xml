@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slider_back__"
+    android:orientation="vertical"
+    tools:context=".Food.qrcode.QrScanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/food_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:src="@drawable/communications" />
+
+        <TextView
+            android:id="@+id/vT_restaurant_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to Foodey Take Away Delivery, \n A unique way to get your orders from restuarant \n \n Please scan the QR Code available at the reception or delivery counter to get your order"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_18"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/button_start_scan"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_corner_green"
+            android:layout_marginTop="20dp"
+            android:text="Scan QR Code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

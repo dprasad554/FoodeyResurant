@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Food.orderhistory.TrackOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/vf_ato_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/vI_ato_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_arrow_white"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/vT_ato_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_live"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/vI_ato_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16" />
+
+        <LinearLayout
+            android:id="@+id/vL_ato_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/vT_ato_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Food there at Kitchen"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/vT_ato_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Your Order will be delivery bty 11.29PM"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/vC_ato_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:civ_border_color="@color/expo_bg"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/great_food"
+                    android:contentDescription="@string/app_name" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center|start"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/vT_ato_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prasanna"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_16" />
+                    <TextView
+                        android:id="@+id/vT_ato_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_boy"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/vT_ato_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

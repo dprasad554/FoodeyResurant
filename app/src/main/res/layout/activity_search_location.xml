@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Food.home.SearchLocationActivity">
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/vT_aslc_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/location"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_grey_corner_bend"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gl_search_black"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/vE_aslc_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/type_city"
+            android:paddingStart="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vT_aslc_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_green_corner_bend"
+        android:gravity="center"
+        android:paddingEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="50dp"
+        android:drawableStart="@drawable/auto_direct_my_location"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:text="@string/auto_detect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16" />
+    <TextView
+        android:id="@+id/vT_aslc_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Popular_location"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_16"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vR_asr_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+</LinearLayout>

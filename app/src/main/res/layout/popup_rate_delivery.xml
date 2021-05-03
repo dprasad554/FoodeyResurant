@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/text_16"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vI_deliveryboy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/foodey_logo_small" />
+
+            <TextView
+                android:id="@+id/delBoyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dboy_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvRatingScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vE_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell us what you loved"
+            android:inputType="textMultiLine"
+            android:lines="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vI_res"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/foodey_logo_small" />
+
+            <TextView
+                android:id="@+id/restName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Al Dazz Restaurant"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBarRes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvRatingScaleRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vE_rate_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell us what you loved"
+            android:inputType="textMultiLine"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Send feedback"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/vT_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Skip"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

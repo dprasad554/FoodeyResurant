@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/slider_back__"
+    tools:context=".Food.eatout.OTPVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/smartphone"/>
+
+        <TextView
+            android:id="@+id/vT_av_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/your_mobile"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_14"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/vT_av_mobileval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="7327627277"
+            android:drawableEnd="@drawable/mobile"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vT_av_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_18" />
+            <EditText
+                android:id="@+id/vE_av_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6"
+                android:background="@null"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:hint="@string/verification_code"
+                android:textSize="@dimen/text_18"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color_light"/>
+        <TextView
+            android:id="@+id/vT_av_otphas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/otp_sent"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/vT_av_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/resend_code"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18" />
+
+        <TextView
+            android:id="@+id/vT_av_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/verify_"
+            android:gravity="center"
+            android:paddingStart="65dp"
+            android:paddingEnd="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_red_corner_bend"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_18" />
+    </LinearLayout>
+
+
+</LinearLayout>

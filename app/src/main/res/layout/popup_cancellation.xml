@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vT_pc_choose"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/cancellation_reason"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vR_pc_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/vL_pc_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/vT_pc_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Plan got Changed"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_14" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/successful"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:id="@+id/vT_pc_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/you_will_get_confirmation"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/vT_pc_view_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/view_order_summary"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+</LinearLayout>

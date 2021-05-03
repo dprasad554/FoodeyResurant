@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vL_adc_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center|start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/circle_stroke_blue"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/vI_adc_select"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/circle_red" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/vT_adc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:singleLine="true"
+            android:text="Plan got Changed"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/expo_bg" />
+
+
+</LinearLayout>

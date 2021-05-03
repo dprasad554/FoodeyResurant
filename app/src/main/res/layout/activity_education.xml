@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slider_back__"
+    android:orientation="vertical"
+    tools:context=".Food.education.EducationActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vV_ae_educational"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vI_ae_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/vT_ae_skip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_18"
+            android:text="@string/skip" />
+    </LinearLayout>
+    <com.rd.PageIndicatorView
+        android:id="@+id/vV_ae_pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95dp"
+        android:layout_marginStart="30dp"
+        app:piv_animationType="scale"
+        app:piv_dynamicCount="true"
+        android:layout_alignParentBottom="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/text_color"
+        app:piv_unselectedColor="@color/hint_color"
+        app:piv_viewPager="@id/vV_ae_educational"
+        attrs:piv_padding="8dp"
+        attrs:piv_radius="4dp" />
+
+</RelativeLayout>

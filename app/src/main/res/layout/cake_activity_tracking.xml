@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/track_map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_margin10"
+        android:layout_marginBottom="@dimen/layout_margin10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order is picked"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:layout_marginLeft="@dimen/layout_margin10"/>
+
+            <TextView
+                android:id="@+id/riderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery agent Ram is on his way"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:layout_marginLeft="@dimen/layout_margin10"
+                android:layout_marginTop="@dimen/layout_margin5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/hint_color"
+            android:layout_marginTop="@dimen/layout_margin5"
+            android:layout_marginBottom="@dimen/layout_margin5"/>
+
+        <LinearLayout
+            android:id="@+id/callRider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/call"/>
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call rider"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

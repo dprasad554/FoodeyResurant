@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/vR_adeot_main"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/vC_adeot_card"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:id="@+id/vI_adeot_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:contentDescription="@string/app_name"
+                                android:background="@drawable/great_food"
+                                android:scaleType="fitXY" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/vT_adeot_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:text="The Black Rabbit"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/text_14" />
+
+                                <TextView
+                                    android:id="@+id/vT_adeot_status"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/circle_blue"
+                                    android:paddingBottom="2dp"
+                                    android:paddingEnd="10dp"
+                                    android:paddingStart="10dp"
+                                    android:paddingTop="2dp"
+                                    android:text="@string/open_now"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_8"
+                                    android:visibility="gone"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/vT_adeot_place"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:singleLine="true"
+                                android:text="Escape Hotel &amp; Spa, Whitefield,Bangalore"
+                                android:textColor="@color/text_color_light"
+                                android:textSize="@dimen/text_10"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/vT_adeot_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/text_color_light"
+                                android:textSize="@dimen/text_14" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/expo_bg" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/vT_adeot_event"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/red"
+                                    android:paddingBottom="3dp"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:paddingTop="3dp"
+                                    android:text="@string/event"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_10" />
+
+                                <TextView
+                                    android:id="@+id/vT_adeot_live"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="@string/live"
+                                    android:textColor="@color/text_color_light"
+                                    android:textSize="@dimen/text_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vV_adeot_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/expo_bg" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/vT_adeot_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/circle_green_two_corner_bend"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:text="4.5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_12"
+        android:visibility="gone"/>
+</RelativeLayout>
+

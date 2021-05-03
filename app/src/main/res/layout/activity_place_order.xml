@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Food.placeorder.PlaceOrderActivity">
+
+    <ImageView
+        android:id="@+id/vI_apo_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/back_arrow"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vT_apo_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay ₹ 230.00"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/vT_apo_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/save_payment_methods"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:id="@+id/vL_apo_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_dark_grey_all_corner_bend"
+            android:gravity="center|start">
+
+            <TextView
+                android:id="@+id/vT_apo_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/payment_option_1"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/cod"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_apo_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle_while_corner_bend"
+            android:gravity="center|start">
+
+            <TextView
+                android:id="@+id/vT_apo_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/payment_option_2"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/add_payment_methods"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vT_apo_place"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gradient_green"
+        android:gravity="center"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:text="@string/place_order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14" />
+</LinearLayout>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Restaurant Design 1 -->
+        <LinearLayout
+            android:id="@+id/vL_pi_select_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/food_cart"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_select_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/select_res"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_res_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/select_res_sam"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_select_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_pi_select_food"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    android:text="@string/select_food"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_18" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/coffee"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_food_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="@string/select_food_sam"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_order_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/scooter"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_order_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/order_food"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_order_food_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/order_res_sam"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <!--Restaurant Design 1 -->
+
+        <!--Restaurant Design 2 -->
+        <LinearLayout
+            android:id="@+id/vL_pi_select_gross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/shops"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_select_gross"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/select_store"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_gross_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/select_res_store"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_select_gross_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_pi_select_gross_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    android:text="@string/select_grocery"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_18" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/groceries"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_gross_sam_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="@string/select_grocery_sam"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_order_gross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/delivery_boy"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_order_gross"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/order_grocery"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_order_gross_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/deliver_grocery"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <!--Restaurant Design 2 -->
+
+        <!--Restaurant Design 3 -->
+        <LinearLayout
+            android:id="@+id/vL_pi_select_cake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/donut_shop"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_select_cake"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/select_cake"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_cake_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/select_res_cake"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_select_cake_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_pi_select_cake_item"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|bottom"
+                    android:text="@string/select_cake_item"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_18" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/cake"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_select_cake_sam_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:text="@string/select_cake_sam"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vL_pi_order_cake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/birthday"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/vT_pi_order_cake"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|bottom"
+                    android:text="@string/order_cake"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_18" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vT_pi_order_cake_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|end"
+                android:text="@string/deliver_cake"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <!--Restaurant Design 3 -->
+
+        <!--Get Started Now Design-->
+        <LinearLayout
+            android:id="@+id/vL_pi_get_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+           <!-- <com.foodres.app.education.GifImageView
+                android:id="@+id/gifImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:contentDescription="@string/app_name"/>-->
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:background="@drawable/dish"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/vT_pi_get_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/get_started_now"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:id="@+id/vT_pi_get_start_sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/we_give_you"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <!--Get Started Now Design-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/vR_pi_login_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/vT_pi_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/circle_red_corner_bend"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:layout_marginBottom="20dp"/>
+
+        <!--<TextView
+            android:id="@+id/vT_pi_new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_green_corner_bend"
+            android:gravity="center"
+            android:paddingEnd="60dp"
+            android:paddingStart="60dp"
+            android:text="@string/new_user"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16" />-->
+    </RelativeLayout>
+
+   <!-- <TextView
+        android:id="@+id/vT_pi_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/guest_user"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_16"
+        android:visibility="gone"/>-->
+</LinearLayout>

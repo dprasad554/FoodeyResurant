@@ -1,0 +1,36 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vC_adhg_card"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:layout_margin="5dp"
+    android:background="@null"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cat_name"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_corner"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/tv_categoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="Horllicks"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/iv_category"
+            android:gravity="center"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
